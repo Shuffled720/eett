@@ -31,11 +31,11 @@ export function FullWeekTT() {
   }, [])
   return (
     <div className="container bg-secondary">
-      <Table>
+      <Table className="text-xs antialiased">
         {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">Days</TableHead>
+            <TableHead className="w-[10px]">Days</TableHead>
             <TableHead>8:30-9:25</TableHead>
             <TableHead>9:30-10:25</TableHead>
             <TableHead>10:30-11:25</TableHead>
@@ -54,7 +54,7 @@ export function FullWeekTT() {
                       <>
                         {tt.type === "Lecture" ? (
                           <>
-                            <TableCell className="font-medium bg-green-50">
+                            <TableCell className=" font-medium bg-green-50">
                               {tt.title}
                               {tt.teacher}
                             </TableCell>

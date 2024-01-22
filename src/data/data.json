@@ -1,136 +1,154 @@
 {
-    "tt": {
-        "Monday": [
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            },
-            {
-                "title": "L: EE 302",
-                "type": "Lecture",
-                "teacher": "(Controls)"
-            },
-            {
-                "title": "L: EE 304",
-                "type": "Lecture",
-                "teacher": "DSP(Appinna)"
-            },
-            {
-                "title": "L: EE 308",
-                "type": "Lecture",
-                "teacher": "(Taklu)"
-            }
-        ],
-        "Tuesday": [
-            {
-                "title": "L: HS 302/ ES 302",
-                "type": "Lecture",
-                "teacher": ""
-            },
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            },
-            {
-                "title": "L: EE 306",
-                "type": "Lecture",
-                "teacher": "(Black-Shaibal)"
-            },
-            {
-                "title": "L: EE 302",
-                "type": "Lecture",
-                "teacher": "(Controls)"
-            }
-        ],
-        "Wednesday": [
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            },
-            {
-                "title": "L: EE 306",
-                "type": "Lecture",
-                "teacher": "(Black-Shaibal)"
-            },
-            {
-                "title": "L: EE 304",
-                "type": "Lecture",
-                "teacher": "DSP(Appinna)"
-            },
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            }
-        ],
-        "Thursday": [
-            {
-                "title": "L: HS 302/ ES 302",
-                "type": "Lecture",
-                "teacher": ""
-            },
-            {
-                "title": "L: EE 304",
-                "type": "Lecture",
-                "teacher": "DSP(Appinna)"
-            },
-            {
-                "title": "T: EE 306",
-                "type": "Tutorial",
-                "teacher": "(Black-Shaibal)"
-            },
-            {
-                "title": "L: EE 308",
-                "type": "Lecture",
-                "teacher": "(Taklu)"
-            }
-        ],
-        "Friday": [
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            },
-            {
-                "title": "T: EE 302",
-                "type": "Tutorial",
-                "teacher": "(Controls)"
-            },
-            {
-                "title": "T: EE 308",
-                "type": "Tutorial",
-                "teacher": "(Taklu)"
-            },
-            {
-                "title": "T: EE 304",
-                "type": "Tutorial",
-                "teacher": "DSP(appinna)"
-            }
-        ],
-        "Saturday": [
-            {
-                "title": "L: HS 302/ ES 302",
-                "type": "Lecture",
-                "teacher": ""
-            },
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            },
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            },
-            {
-                "title": "",
-                "type": "",
-                "teacher": ""
-            }
-        ]
+  "weekTT": [
+    {
+      "day": "Monday",
+      "ttList": [
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "L: EE 302",
+          "type": "Lecture",
+          "teacher": "(Controls)"
+        },
+        {
+          "title": "L: EE 304",
+          "type": "Lecture",
+          "teacher": "DSP(Appinna)"
+        },
+        {
+          "title": "L: EE 308",
+          "type": "Lecture",
+          "teacher": "(Taklu)"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "ttList": [
+        {
+          "title": "L: HS 302/ ES 302",
+          "type": "Lecture",
+          "teacher": ""
+        },
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "L: EE 306",
+          "type": "Lecture",
+          "teacher": "(Black-Shaibal)"
+        },
+        {
+          "title": "L: EE 302",
+          "type": "Lecture",
+          "teacher": "(Controls)"
+        }
+      ]
+    },
+    {
+      "day": "Wednessday",
+      "ttList": [
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "L: EE 306",
+          "type": "Lecture",
+          "teacher": "(Black-Shaibal)"
+        },
+        {
+          "title": "L: EE 304",
+          "type": "Lecture",
+          "teacher": "DSP(Appinna)"
+        },
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "ttList": [
+        {
+          "title": "L: HS 302/ ES 302",
+          "type": "Lecture",
+          "teacher": ""
+        },
+        {
+          "title": "L: EE 304",
+          "type": "Lecture",
+          "teacher": "DSP(Appinna)"
+        },
+        {
+          "title": "T: EE 306",
+          "type": "Tutorial",
+          "teacher": "(Black-Shaibal)"
+        },
+        {
+          "title": "L: EE 308",
+          "type": "Lecture",
+          "teacher": "(Taklu)"
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "ttList": [
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "T: EE 302",
+          "type": "Tutorial",
+          "teacher": "(Controls)"
+        },
+        {
+          "title": "T: EE 308",
+          "type": "Tutorial",
+          "teacher": "(Taklu)"
+        },
+        {
+          "title": "T: EE 304",
+          "type": "Tutorial",
+          "teacher": "DSP(appinna)"
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "ttList": [
+        {
+          "title": "L: HS 302/ ES 302",
+          "type": "Lecture",
+          "teacher": ""
+        },
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        }
+      ]
     }
+  ]
 }

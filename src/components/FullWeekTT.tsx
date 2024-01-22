@@ -1,3 +1,5 @@
+"use client"
+import React, { useState, useEffect } from "react"
 import {
   Table,
   TableBody,
@@ -8,152 +10,27 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-// import data from "@/data/data.json"
-const data = [
-  {
-    day: "Monday",
-    first: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-    second: {
-      title: "L: EE 302",
-      type: "Lecture",
-      teacher: "(Controls)",
-    },
-    third: {
-      title: "L: EE 304",
-      type: "Lecture",
-      teacher: "DSP(Appinna)",
-    },
-    fourth: {
-      title: "L: EE 308",
-      type: "Lecture",
-      teacher: "(Taklu)",
-    },
-  },
-  {
-    day: "Tuesday",
-    first: {
-      title: "L: HS 302/ ES 302",
-      type: "Lecture",
-      teacher: "",
-    },
-    second: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-    third: {
-      title: "L: EE 306",
-      type: "Lecture",
-      teacher: "(Black-Shaibal)",
-    },
-    fourth: {
-      title: "L: EE 302",
-      type: "Lecture",
-      teacher: "(Controls)",
-    },
-  },
-  {
-    day: "Wednessday",
-    first: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-    second: {
-      title: "L: EE 306",
-      type: "Lecture",
-      teacher: "(Black-Shaibal)",
-    },
-    third: {
-      title: "L: EE 304",
-      type: "Lecture",
-      teacher: "DSP(Appinna)",
-    },
-    fourth: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-  },
-  {
-    day: "Thursday",
-    first: {
-      title: "L: HS 302/ ES 302",
-      type: "Lecture",
-      teacher: "",
-    },
-    second: {
-      title: "L: EE 304",
-      type: "Lecture",
-      teacher: "DSP(Appinna)",
-    },
-    third: {
-      title: "T: EE 306",
-      type: "Tutorial",
-      teacher: "(Black-Shaibal)",
-    },
-    fourth: {
-      title: "L: EE 308",
-      type: "Lecture",
-      teacher: "(Taklu)",
-    },
-  },
-  {
-    day: "Friday",
-    first: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-    second: {
-      title: "T: EE 302",
-      type: "Tutorial",
-      teacher: "(Controls)",
-    },
-    third: {
-      title: "T: EE 308",
-      type: "Tutorial",
-      teacher: "(Taklu)",
-    },
-    fourth: {
-      title: "T: EE 304",
-      type: "Tutorial",
-      teacher: "DSP(appinna)",
-    },
-  },
-  {
-    day: "Saturday",
-
-    first: {
-      title: "L: HS 302/ ES 302",
-      type: "Lecture",
-      teacher: "",
-    },
-    second: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-    third: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-    fourth: {
-      title: "",
-      type: "",
-      teacher: "",
-    },
-  },
-]
+import data from "@/data/data.json"
 
 export function FullWeekTT() {
+  const [currentDayOfWeek, setCurrentDayOfWeek] = useState("")
+
+  useEffect(() => {
+    const currentDate = new Date()
+    const daysOfWeek = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ]
+    const dayOfWeek = daysOfWeek[currentDate.getDay()]
+    setCurrentDayOfWeek(dayOfWeek)
+  }, [])
   return (
-    <div className="container">
+    <div className="container bg-secondary">
       <Table>
         {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
         <TableHeader>
@@ -166,37 +43,104 @@ export function FullWeekTT() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data.map((day) => (
-            <TableRow key={day.day}>
-              <TableCell className="font-medium">{day.day}</TableCell>
-
-              <TableCell className="font-medium ">
-                <div className="">
-                  {day.first.title}
-                  {day.first.teacher}
-                </div>
-              </TableCell>
-              <TableCell className="font-medium">
-                {day.second.title}
-                {day.second.teacher}
-              </TableCell>
-              <TableCell className="font-medium">
-                {day.third.title}
-                {day.third.teacher}
-              </TableCell>
-              <TableCell className="font-medium">
-                {day.fourth.title}
-                {day.fourth.teacher}
-              </TableCell>
-            </TableRow>
+          {data.weekTT.map((day, key) => (
+            <>
+              {day.day === currentDayOfWeek ? (
+                <>
+                  {" "}
+                  <TableRow key={day.day} className="text-primary">
+                    <TableCell className="font-medium">{day.day}</TableCell>
+                    {day.ttList.map((tt) => (
+                      <>
+                        {tt.type === "Lecture" ? (
+                          <>
+                            <TableCell className="font-medium bg-green-50">
+                              {tt.title}
+                              {tt.teacher}
+                            </TableCell>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+                        {tt.type === "Tutorial" ? (
+                          <>
+                            <TableCell className="font-medium bg-red-50">
+                              {tt.title}
+                              {tt.teacher}
+                            </TableCell>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+                        {tt.type === "" ? (
+                          <>
+                            <TableCell className="font-medium ">
+                              {tt.title}
+                              {tt.teacher}
+                            </TableCell>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+                      </>
+                    ))}
+                  </TableRow>
+                </>
+              ) : (
+                <>
+                  {" "}
+                  <TableRow key={day.day}>
+                    <TableCell className="font-medium">{day.day}</TableCell>
+                    {day.ttList.map((tt) => (
+                      <>
+                        {tt.type === "Lecture" ? (
+                          <>
+                            <TableCell className="font-medium bg-green-50">
+                              {tt.title}
+                              {tt.teacher}
+                            </TableCell>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+                        {tt.type === "Tutorial" ? (
+                          <>
+                            <TableCell className="font-medium bg-red-50">
+                              {tt.title}
+                              {tt.teacher}
+                            </TableCell>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+                        {tt.type === "" ? (
+                          <>
+                            <TableCell className="font-medium ">
+                              {tt.title}
+                              {tt.teacher}
+                            </TableCell>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+                      </>
+                    ))}
+                  </TableRow>{" "}
+                </>
+              )}
+            </>
           ))}
         </TableBody>
-        {/* <TableFooter>
+        <TableFooter>
           <TableRow>
-            <TableCell colSpan={3}>Total</TableCell>
-            <TableCell className="text-right">$2,500.00</TableCell>
+            <TableCell colSpan={2}>Tuesday:</TableCell>
+            <TableCell>P: EE 352 (E1)/P: EE 356 (E2)</TableCell>
           </TableRow>
-        </TableFooter> */}
+          <TableRow>
+            <TableCell colSpan={2}>Wednesday:</TableCell>
+            <TableCell>P: EE 352 (E2)/P: EE 356 (E1)</TableCell>
+          </TableRow>
+        </TableFooter>
       </Table>
     </div>
   )

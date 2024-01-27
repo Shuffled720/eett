@@ -4,18 +4,16 @@ const Menu = () => {
   return (
     <>
       <section id="menu" className="container ">
-        <center>
-          <h1 className="text-center text-3xl py-2 ">Menu</h1>
-          <div className="h-1/5 overflow-hidden">
-            <Image
-              alt="menu"
-              className="menu-img"
-              src="/menu.png"
-              width={700}
-              height={700}
-            />
-          </div>
-        </  center>
+        <h1 className="text-center text-3xl   ">Menu</h1>
+        <div className=" overflow-hidden ">
+          <Image
+            alt="menu"
+            className="menu-img"
+            src="/menu.png"
+            width={1500}
+            height={100}
+          />
+        </div>
       </section>
     </>
   )

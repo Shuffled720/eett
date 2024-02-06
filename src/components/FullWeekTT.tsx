@@ -30,9 +30,9 @@ export function FullWeekTT() {
     setCurrentDayOfWeek(dayOfWeek)
   }, [])
   return (
-    <div className="container bg-secondary">
+    <div className="container bg-secondary my-2">
       <Table className="text-xs antialiased">
-        {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
+        <TableCaption>Full Week Time Table</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[10px]">Days</TableHead>
@@ -47,7 +47,6 @@ export function FullWeekTT() {
             <>
               {day.day === currentDayOfWeek ? (
                 <>
-                  {" "}
                   <TableRow key={day.day} className="text-primary">
                     <TableCell className="font-medium">{day.day}</TableCell>
                     {day.ttList.map((tt) => (

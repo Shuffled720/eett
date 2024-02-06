@@ -150,5 +150,37 @@
         }
       ]
     }
+  ],
+  "midexamTT": [
+    {
+      "date_day": "23/02/20124 (Friday)",
+      "time": "10:00-12:00",
+      "code": "EE 306",
+      "name": "D COM"
+    },
+    {
+      "date_day": "24/02/2024 (Saturday)",
+      "time": "10:00-12:00",
+      "code": "EE 302",
+      "name": "Controls"
+    },
+    {
+      "date_day": "27/02/2024 (Tuesday)",
+      "time": "10:00-12:00",
+      "code": "EE 304",
+      "name": "DSP"
+    },
+    {
+      "date_day": "29/02/2024 (Thrusday)",
+      "time": "10:00-12:00",
+      "code": "ES 302",
+      "name": "DSP"
+    },
+    {
+      "date_day": "01/03/2024 (Friday)",
+      "time": "10:00-12:00",
+      "code": "EE 308",
+      "name": "Power "
+    }
   ]
 }

@@ -8,13 +8,10 @@ export default function Home() {
   return (
     <>
       <Header />
-
-      <ExamTT />
-
-      <FullWeekTT />
-
-      <Material />
-
+      <p className="text-center">Maze karo Exams Over</p>
+      {/* <ExamTT /> */}
+      {/* <FullWeekTT /> */}
+      {/* <Material /> */}
       <Menu />
     </>
   )

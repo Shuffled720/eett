@@ -16,7 +16,7 @@
         {
           "title": "L: EE 304",
           "type": "Lecture",
-          "teacher": "DSP(Appinna)"
+          "teacher": "DSP(HOD)"
         },
         {
           "title": "L: EE 308",
@@ -66,7 +66,7 @@
         {
           "title": "L: EE 304",
           "type": "Lecture",
-          "teacher": "DSP(Appinna)"
+          "teacher": "DSP(HOD)"
         },
         {
           "title": "",
@@ -86,7 +86,7 @@
         {
           "title": "L: EE 304",
           "type": "Lecture",
-          "teacher": "DSP(Appinna)"
+          "teacher": "DSP(HOD)"
         },
         {
           "title": "T: EE 306",
@@ -121,7 +121,7 @@
         {
           "title": "T: EE 304",
           "type": "Tutorial",
-          "teacher": "DSP(appinna)"
+          "teacher": "DSP(HOD)"
         }
       ]
     },

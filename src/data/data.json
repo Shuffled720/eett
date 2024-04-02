@@ -182,5 +182,37 @@
       "code": "EE 308",
       "name": "Power "
     }
+  ],
+  "endExamTT": [
+    {
+      "date_day": "26-04-2024 (Friday)",
+      "time": "10:00-13:00",
+      "code": "EE 306",
+      "name": "D COM"
+    },
+    {
+      "date_day": "27-04-2024 (Saturday)",
+      "time": "10:00-13:00",
+      "code": "EE 302",
+      "name": "Controls"
+    },
+    {
+      "date_day": "30-04-2024 (Tuesday)",
+      "time": "10:00-13:00",
+      "code": "EE 304",
+      "name": "DSP"
+    },
+    {
+      "date_day": "02-05-2024 (Thrusday)",
+      "time": "10:00-13:00",
+      "code": "ES 302",
+      "name": "ES/HS"
+    },
+    {
+      "date_day": "03-05-2024 (Friday)",
+      "time": "10:00-13:00",
+      "code": "EE 308",
+      "name": "Power "
+    }
   ]
 }

@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
       {/* <p className="text-center">Maze karo Exams Over</p> */}
-      {/* <ExamTT /> */}
+      <ExamTT />
       <FullWeekTT />
       <Material />
       <Menu />

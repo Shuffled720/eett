@@ -23,7 +23,7 @@ export function ExamTT() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data.midexamTT.map((exam, index) => (
+          {data.endExamTT.map((exam, index) => (
             <TableRow key={index}>
               <TableCell>{exam.date_day}</TableCell>
               <TableCell>{exam.code}</TableCell>

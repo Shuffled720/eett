@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <p className="text-center">Maze karo Exams Over</p> */}
-      <ExamTT />
-      <FullWeekTT />
+      <p className="text-center">Maze karo BTP hai!!!</p>
+      {/* <ExamTT /> */}
+      {/* <FullWeekTT /> */}
       {/* <Material /> */}
       <Menu />
     </>

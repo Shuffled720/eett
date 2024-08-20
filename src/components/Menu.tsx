@@ -13,6 +13,13 @@ const Menu = () => {
             width={1500}
             height={100}
           />
+           <Image
+            alt="menu"
+            className="menu-img"
+            src="/time.png"
+            width={1000}
+            height={100}
+          />
         </div>
       </section>
     </>

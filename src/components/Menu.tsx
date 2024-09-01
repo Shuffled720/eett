@@ -9,7 +9,7 @@ const Menu = () => {
           <Image
             alt="menu"
             className="menu-img"
-            src="/menu.png"
+            src="/menu-1.png"
             width={1500}
             height={100}
           />

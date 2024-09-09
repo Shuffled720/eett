@@ -11,9 +11,11 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
+    "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.312.0",
+    "mongoose": "^8.6.1",
     "next": "14.1.0",
     "next-themes": "^0.2.1",
     "react": "^18",

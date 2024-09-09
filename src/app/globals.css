@@ -59,3 +59,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input {
+  border: 1px solid #ddd;
+}
+
+button {
+  cursor: pointer;
+}

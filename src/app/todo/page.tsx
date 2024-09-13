@@ -66,13 +66,15 @@ export default function Home() {
           placeholder="New todo"
           className="border p-2 mr-2"
         /> */}
-        <Input
-          type="text"
-          value={newTodo}
-          onChange={(e) => setNewTodo(e.target.value)}
-          placeholder="New todo"
-        />
-        <Button onClick={addTodo}>Add Todo</Button>
+        <form onSubmit={addTodo}>
+          <Input
+            type="text"
+            value={newTodo}
+            onChange={(e) => setNewTodo(e.target.value)}
+            placeholder="New todo"
+          />
+          <Button type="submit">Add Todo</Button>
+        </form>
       </div>
       <ul>
         {todos.map((todo) => (
@@ -96,6 +98,7 @@ export default function Home() {
                 <Button
                   onClick={() => deleteTodo(todo._id)}
                   variant="destructive"
+                // onKeyDown={}
                 >
                   Delete
                 </Button>

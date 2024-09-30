@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type Todo = {
   _id: string;
@@ -57,7 +58,9 @@ export default function Home() {
 
   return (
     <main className="p-8">
-      <h1 className="text-2xl mb-4">Todo List</h1>
+      <Link href="/">
+        <h1 className="text-2xl mb-4">Todo List</h1>
+      </Link>
       <div className="mb-4">
         {/* <input
           type="text"

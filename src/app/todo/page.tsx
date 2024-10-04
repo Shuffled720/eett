@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   const fetchTodos = async () => {
-    if (isDeleteLoading || isSubmitLoading)
+    if (todos.length === 0)
       setIsTodoLoading(true);
     const res = await fetch("/api/todos");
     const data = await res.json();

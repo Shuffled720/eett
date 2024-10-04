@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Loader2 } from "lucide-react"
+
 import Link from "next/link";
 
 type Todo = {
@@ -13,6 +15,8 @@ type Todo = {
 
 export default function Home() {
   const [todos, setTodos] = useState<Todo[]>([]);
+  const [isSubmitLoading, setIsSubmitLoading] = useState(false);
+  const [isDeleteLoading, setIsDeleteLoading] = useState(false);
   const [newTodo, setNewTodo] = useState("");
 
   useEffect(() => {
@@ -28,6 +32,7 @@ export default function Home() {
   interface AddTodoEvent extends React.FormEvent<HTMLFormElement> { }
 
   const addTodo = async (e: AddTodoEvent) => {
+    setIsSubmitLoading(true);
     e.preventDefault();
     if (newTodo.trim() === "") return;
     await fetch("/api/todos", {
@@ -39,6 +44,7 @@ export default function Home() {
     });
     setNewTodo("");
     fetchTodos();
+    setIsSubmitLoading(false);
   };
 
   const toggleTodo = async (id: string, completed: boolean) => {
@@ -53,10 +59,12 @@ export default function Home() {
   };
 
   const deleteTodo = async (id: string) => {
+    setIsDeleteLoading(true);
     await fetch(`/api/todos/${id}`, {
       method: "DELETE",
     });
     fetchTodos();
+    setIsDeleteLoading(false);
   };
 
   return (
@@ -79,11 +87,15 @@ export default function Home() {
             onChange={(e) => setNewTodo(e.target.value)}
             placeholder="New todo"
           />
-          <Button type="submit">Add Todo</Button>
+          {isSubmitLoading ? <> <Button disabled>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            Please wait
+          </Button></> : <><Button type="submit">Add Todo</Button></>}
+
         </form>
       </div>
       <ul>
-        {todos.map((todo) => (
+        {todos.map((todo, id) => (
 
           <li key={todo._id} className="mb-2">
             <div className="flex ">
@@ -99,15 +111,19 @@ export default function Home() {
                   {todo.title}
                 </span>
               </div>
-              <div className="">
-
-                <Button
+              <div>
+                {(isDeleteLoading) ? <> <Button disabled>
+                  {/* <Loader2 className="mr-2 h-4 w-4 animate-spin" /> */}
+                  Delete
+                </Button>
+                </> : <>  <Button
                   onClick={() => deleteTodo(todo._id)}
                   variant="destructive"
                 // onKeyDown={}
                 >
                   Delete
-                </Button>
+                </Button></>}
+
               </div>
             </div>
           </li>

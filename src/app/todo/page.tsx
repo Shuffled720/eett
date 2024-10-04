@@ -25,7 +25,10 @@ export default function Home() {
     setTodos(data);
   };
 
-  const addTodo = async () => {
+  interface AddTodoEvent extends React.FormEvent<HTMLFormElement> { }
+
+  const addTodo = async (e: AddTodoEvent) => {
+    e.preventDefault();
     if (newTodo.trim() === "") return;
     await fetch("/api/todos", {
       method: "POST",

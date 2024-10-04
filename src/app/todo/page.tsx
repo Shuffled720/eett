@@ -17,6 +17,7 @@ export default function Home() {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [isSubmitLoading, setIsSubmitLoading] = useState(false);
   const [isDeleteLoading, setIsDeleteLoading] = useState(false);
+  const [isTodoLoading, setIsTodoLoading] = useState(false);
   const [newTodo, setNewTodo] = useState("");
 
   useEffect(() => {
@@ -24,9 +25,11 @@ export default function Home() {
   }, []);
 
   const fetchTodos = async () => {
+    setIsTodoLoading(true);
     const res = await fetch("/api/todos");
     const data = await res.json();
     setTodos(data);
+    setIsTodoLoading(false);
   };
 
   interface AddTodoEvent extends React.FormEvent<HTMLFormElement> { }
@@ -73,13 +76,6 @@ export default function Home() {
         <h1 className="text-2xl mb-4">Todo List</h1>
       </Link>
       <div className="mb-4">
-        {/* <input
-          type="text"
-          value={newTodo}
-          onChange={(e) => setNewTodo(e.target.value)}
-          placeholder="New todo"
-          className="border p-2 mr-2"
-        /> */}
         <form onSubmit={addTodo}>
           <Input
             type="text"
@@ -95,6 +91,7 @@ export default function Home() {
         </form>
       </div>
       <ul>
+        {(isTodoLoading == true) && <><p>Please wait Lodading Todos </p><Loader2 className="animate-spin" /> </>}
         {todos.map((todo, id) => (
 
           <li key={todo._id} className="mb-2">

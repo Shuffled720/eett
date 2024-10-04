@@ -93,7 +93,7 @@ export default function Home() {
         </form>
       </div>
       <ul>
-        {(isTodoLoading == true) && <><p>Please wait Lodading Todos </p><Loader2 className="animate-spin" /> </>}
+        {(isTodoLoading == true) && <><p>Please wait Loading Todos </p><Loader2 className="animate-spin" /> </>}
         {todos.map((todo, id) => (
 
           <li key={todo._id} className="mb-2">

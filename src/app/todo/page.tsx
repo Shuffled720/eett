@@ -25,7 +25,8 @@ export default function Home() {
   }, []);
 
   const fetchTodos = async () => {
-    setIsTodoLoading(true);
+    if (isDeleteLoading || isSubmitLoading)
+      setIsTodoLoading(true);
     const res = await fetch("/api/todos");
     const data = await res.json();
     setTodos(data);
@@ -62,6 +63,7 @@ export default function Home() {
   };
 
   const deleteTodo = async (id: string) => {
+
     setIsDeleteLoading(true);
     await fetch(`/api/todos/${id}`, {
       method: "DELETE",

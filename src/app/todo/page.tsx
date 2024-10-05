@@ -73,7 +73,7 @@ export default function Home() {
   };
 
   return (
-    <main className="p-8">
+    <div className=" m-5 md:mx-60 p-8 shadow-2xl">
       <Link href="/">
         <h1 className="text-2xl mb-4">Todo List</h1>
       </Link>
@@ -128,6 +128,6 @@ export default function Home() {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }

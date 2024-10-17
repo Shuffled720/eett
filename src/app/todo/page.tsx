@@ -96,7 +96,7 @@ export default function Home() {
         {(isTodoLoading == true) && <><p>Please wait Loading Todos </p><Loader2 className="animate-spin" /> </>}
         {todos.map((todo, id) => (
 
-          <li key={todo._id} className="mb-2">
+          <li key={todo._id} className="mb-2 bg-slate-100 p-1 rounded-xl">
             <div className="flex ">
               <div className="flex flex-auto ">
 

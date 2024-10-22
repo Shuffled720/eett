@@ -9,11 +9,11 @@ const Menu = () => {
           <Image
             alt="menu"
             className="menu-img"
-            src="/menu-1.png"
+            src="/menu.png"
             width={1500}
             height={100}
           />
-           <Image
+          <Image
             alt="menu"
             className="menu-img"
             src="/time.png"

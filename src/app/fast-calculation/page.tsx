@@ -13,6 +13,8 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { motion } from 'framer-motion'; // Importing framer-motion for animations
+
+
 interface GameProps { }
 
 const FastCalculationGame: React.FC<GameProps> = () => {
@@ -77,7 +79,7 @@ const FastCalculationGame: React.FC<GameProps> = () => {
                         type="number"
                         id="terms"
                         value={numTerms}
-                        onChange={(e) => setNumTerms(e.target.value === '' ? '' : Math.max(1, Number(e.target.value)))}
+                        onChange={(e) => setNumTerms(e.target.value === '' ? 1 : Math.max(1, Number(e.target.value)))}
                         className="w-full p-3 rounded-lg border border-gray-300 bg-white text-gray-800 focus:border-blue-500 focus:ring focus:ring-blue-300"
                     />
                 </motion.div>
@@ -87,7 +89,7 @@ const FastCalculationGame: React.FC<GameProps> = () => {
                         type="number"
                         id="digits"
                         value={numDigits}
-                        onChange={(e) => setNumDigits(e.target.value === '' ? '' : Number(e.target.value))}
+                        onChange={(e) => setNumDigits(e.target.value === '' ? 1 : Number(e.target.value))}
                         className="w-full p-3 rounded-lg border border-gray-300 bg-white text-gray-800 focus:border-blue-500 focus:ring focus:ring-blue-300"
                     />
                 </motion.div>

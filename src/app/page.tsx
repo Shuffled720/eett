@@ -18,6 +18,9 @@ export default function Home() {
       <Button asChild>
         <Link href={"/todo"}>A</Link>
       </Button>
+      <Button asChild>
+        <Link href={"/fast-calculation"}>B</Link>
+      </Button>
     </>
   )
 }

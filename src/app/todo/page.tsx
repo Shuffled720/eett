@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Loader2, Clipboard } from "lucide-react";
+import { Loader2, Clipboard, Trash } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -56,12 +56,8 @@ export default function Home() {
         throw new Error("Failed to add todo");
       }
 
-      // Wait for the backend response to get the newly created todo
       const newTodoFromBackend = await res.json();
-
-      // Assuming the backend returns the created todo with its unique `_id`
       setTodos((prevTodos) => [...prevTodos, newTodoFromBackend]);
-
       setNewTodo("");
     } catch (error) {
       console.error("Failed to add todo", error);
@@ -70,7 +66,6 @@ export default function Home() {
       setIsSubmitLoading(false);
     }
   };
-
 
   const toggleTodo = async (id: string, completed: boolean) => {
     try {
@@ -101,9 +96,7 @@ export default function Home() {
         throw new Error("Failed to delete todo");
       }
 
-      // Update state after successful deletion
       setTodos((prevTodos) => prevTodos.filter((todo) => todo._id !== id));
-
     } catch (error) {
       console.error("Failed to delete todo:", error);
       alert("Failed to delete todo. Please try again.");
@@ -111,9 +104,6 @@ export default function Home() {
       setIsDeleteLoading(null);
     }
   };
-
-
-
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text).then(
@@ -167,7 +157,7 @@ export default function Home() {
           </Button>
         </form>
       </motion.div>
-      <ul className="space-y-2">
+      <ul className="space-y-1">
         {isTodoLoading ? (
           <motion.div
             initial={{ opacity: 0 }}
@@ -182,7 +172,7 @@ export default function Home() {
           todos.map((todo) => (
             <motion.li
               key={todo._id}
-              className="p-3 hover:bg-slate-100 rounded-lg shadow-sm flex justify-between items-center overflow-hidden"
+              className="p-2 hover:bg-slate-100 rounded-lg shadow-sm flex justify-between items-center overflow-hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -190,33 +180,30 @@ export default function Home() {
               <span
                 style={{ textDecoration: todo.completed ? "line-through" : "none" }}
                 onClick={() => toggleTodo(todo._id, todo.completed)}
-                className="cursor-pointer text-lg flex-1 truncate"
+                className="cursor-pointer text-base truncate flex-grow"
               >
                 {todo.title}
               </span>
-              <div className="flex gap-2">
-                <Button
+              <div className="flex gap-1 ml-2">
+                <button
                   onClick={() => copyToClipboard(todo.title)}
-                  className="flex items-center"
+                  className="p-0.5 hover:bg-gray-200 rounded focus:outline-none"
+                  aria-label="Copy Todo"
                 >
-                  <Clipboard className="mr-1 h-4 w-4" />
-                  Copy
-                </Button>
-                <Button
+                  <Clipboard className="h-4 w-4" />
+                </button>
+                <button
                   onClick={() => deleteTodo(todo._id)}
-                  variant="destructive"
                   disabled={isDeleteLoading === todo._id}
-                  className="flex items-center"
+                  className="p-0.5 hover:bg-red-200 rounded focus:outline-none"
+                  aria-label="Delete Todo"
                 >
                   {isDeleteLoading === todo._id ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Deleting...
-                    </>
+                    <Loader2 className="h-4 w-4 animate-spin" />
                   ) : (
-                    "Delete"
+                    <Trash className="h-4 w-4" />
                   )}
-                </Button>
+                </button>
               </div>
             </motion.li>
           ))

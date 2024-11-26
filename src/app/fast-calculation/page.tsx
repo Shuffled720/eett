@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import Link from 'next/link';
 import {
     Select,
     SelectContent,
@@ -70,7 +71,7 @@ const FastCalculationGame: React.FC<GameProps> = () => {
     return (
         <motion.div className="game-container p-6 max-w-xl mx-auto bg-gradient-to-b from-blue-200 to-purple-200 text-gray-800 shadow-2xl rounded-xl" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
             <motion.h1 className="text-center text-3xl font-bold text-blue-800 mb-6" initial={{ y: -20 }} animate={{ y: 0 }} transition={{ duration: 0.6 }}>
-                Fast Calculation Game
+                <Link href="/">Fast Calculation Game</Link>
             </motion.h1>
             <motion.div className="settings space-y-6 p-6 bg-white shadow-lg rounded-lg" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
                 <motion.div initial={{ x: -50 }} animate={{ x: 0 }} transition={{ duration: 0.5 }}>
@@ -148,7 +149,7 @@ const FastCalculationGame: React.FC<GameProps> = () => {
                     </motion.p>
                 )}
             </motion.div>
-        </motion.div>
+        </motion.div >
     );
 };
 

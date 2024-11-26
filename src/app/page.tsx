@@ -10,17 +10,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <p className="text-center">Maze karo BTP hai!!!</p>
       {/* <ExamTT /> */}
       {/* <FullWeekTT /> */}
       {/* <Material /> */}
       <Menu />
-      <Button asChild>
-        <Link href={"/todo"}>A</Link>
-      </Button>
-      <Button asChild>
-        <Link href={"/fast-calculation"}>B</Link>
-      </Button>
     </>
   )
 }

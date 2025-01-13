@@ -6,32 +6,38 @@
         {
           "title": "A",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "C : SOPC",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"L-31"
         },
         {
           "title": "D : Photonics",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"C21"
         },
         {
           "title": "F : CV",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"Sandipani"
         },
         {
           "title": "",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "G : ML",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"Gargi"
         }
       ]
     },
@@ -41,32 +47,38 @@
         {
           "title": "A",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "A",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "B",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "C : SOPC",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"L-31"
         },
         {
           "title": "",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "G : ML",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"Gargi"
         }
       ]
     },
@@ -76,42 +88,50 @@
         {
           "title": "E",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "C : SOPC",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"L-31"
         },
         {
           "title": "A",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "B",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "H : IoT",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"L-42"
         },
         {
           "title": "G : ML",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"Gargi"
         },
         {
           "title": "G : ML",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"Gargi"
         }
       ]
     },
@@ -121,32 +141,38 @@
         {
           "title": "C : SOPC",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"L-31"
         },
         {
           "title": "D : Photonics",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"C21"
         },
         {
           "title": "E",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "F : CV",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"Sandipani"
         },
         {
           "title": "",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "H : IoT",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"L-42"
         }
       ]
     },
@@ -156,32 +182,38 @@
         {
           "title": "B",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "B",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "D : Photonics",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"C21"
         },
         {
           "title": "E",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "",
           "type": "",
-          "teacher": ""
+          "teacher": "",
+          "room":""
         },
         {
           "title": "H : IoT",
           "type": "Lecture",
-          "teacher": ""
+          "teacher": "",
+          "room":"L-42"
         }
       ]
     }

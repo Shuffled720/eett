@@ -59,7 +59,8 @@ export function FullWeekTT() {
                           <>
                             <TableCell className=" font-medium bg-green-50">
                               {tt.title}
-                              {tt.teacher}
+                              {tt.teacher} <br/>
+                              {tt.room}
                             </TableCell>
                           </>
                         ) : (
@@ -69,7 +70,7 @@ export function FullWeekTT() {
                           <>
                             <TableCell className="font-medium bg-red-50">
                               {tt.title}
-                              {tt.teacher}
+                              {tt.teacher} <br/>
                             </TableCell>
                           </>
                         ) : (
@@ -79,7 +80,7 @@ export function FullWeekTT() {
                           <>
                             <TableCell className="font-medium ">
                               {tt.title}
-                              {tt.teacher}
+                              {tt.teacher} <br/>
                             </TableCell>
                           </>
                         ) : (
@@ -99,7 +100,8 @@ export function FullWeekTT() {
                           <>
                             <TableCell className="font-medium bg-green-50">
                               {tt.title}
-                              {tt.teacher}
+                              {tt.teacher} <br/>
+                              {tt.room}
                             </TableCell>
                           </>
                         ) : (
@@ -109,7 +111,7 @@ export function FullWeekTT() {
                           <>
                             <TableCell className="font-medium bg-red-50">
                               {tt.title}
-                              {tt.teacher}
+                              {tt.teacher} <br/>
                             </TableCell>
                           </>
                         ) : (
@@ -119,7 +121,7 @@ export function FullWeekTT() {
                           <>
                             <TableCell className="font-medium ">
                               {tt.title}
-                              {tt.teacher}
+                              {tt.teacher} <br/>
                             </TableCell>
                           </>
                         ) : (

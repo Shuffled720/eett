@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       {/* <ExamTT /> */}
-      {/* <FullWeekTT /> */}
+      <FullWeekTT />
       {/* <Material /> */}
       <Menu />
     </>

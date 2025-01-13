@@ -4,24 +4,34 @@
       "day": "Monday",
       "ttList": [
         {
+          "title": "A",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "C : SOPC",
+          "type": "Lecture",
+          "teacher": ""
+        },
+        {
+          "title": "D : Photonics",
+          "type": "Lecture",
+          "teacher": ""
+        },
+        {
+          "title": "F : CV",
+          "type": "Lecture",
+          "teacher": ""
+        },
+        {
           "title": "",
           "type": "",
           "teacher": ""
         },
         {
-          "title": "L: EE 302",
+          "title": "G : ML",
           "type": "Lecture",
-          "teacher": "(Controls)"
-        },
-        {
-          "title": "L: EE 304",
-          "type": "Lecture",
-          "teacher": "DSP(HOD)"
-        },
-        {
-          "title": "L: EE 308",
-          "type": "Lecture",
-          "teacher": "(Taklu)"
+          "teacher": ""
         }
       ]
     },
@@ -29,7 +39,22 @@
       "day": "Tuesday",
       "ttList": [
         {
-          "title": "L: HS 302/ ES 302",
+          "title": "A",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "A",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "B",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "C : SOPC",
           "type": "Lecture",
           "teacher": ""
         },
@@ -39,14 +64,9 @@
           "teacher": ""
         },
         {
-          "title": "L: EE 306",
+          "title": "G : ML",
           "type": "Lecture",
-          "teacher": "(Black-Shaibal)"
-        },
-        {
-          "title": "L: EE 302",
-          "type": "Lecture",
-          "teacher": "(Controls)"
+          "teacher": ""
         }
       ]
     },
@@ -54,23 +74,43 @@
       "day": "Wednesday",
       "ttList": [
         {
+          "title": "E",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "C : SOPC",
+          "type": "Lecture",
+          "teacher": ""
+        },
+        {
+          "title": "A",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "B",
+          "type": "",
+          "teacher": ""
+        },
+        {
           "title": "",
           "type": "",
           "teacher": ""
         },
         {
-          "title": "L: EE 306",
+          "title": "H : IoT",
           "type": "Lecture",
-          "teacher": "(Black-Shaibal)"
+          "teacher": ""
         },
         {
-          "title": "L: EE 304",
+          "title": "G : ML",
           "type": "Lecture",
-          "teacher": "DSP(HOD)"
+          "teacher": ""
         },
         {
-          "title": "",
-          "type": "",
+          "title": "G : ML",
+          "type": "Lecture",
           "teacher": ""
         }
       ]
@@ -79,24 +119,34 @@
       "day": "Thursday",
       "ttList": [
         {
-          "title": "L: HS 302/ ES 302",
+          "title": "C : SOPC",
           "type": "Lecture",
           "teacher": ""
         },
         {
-          "title": "L: EE 304",
+          "title": "D : Photonics",
           "type": "Lecture",
-          "teacher": "DSP(HOD)"
+          "teacher": ""
         },
         {
-          "title": "T: EE 306",
-          "type": "Tutorial",
-          "teacher": "(Black-Shaibal)"
+          "title": "E",
+          "type": "",
+          "teacher": ""
         },
         {
-          "title": "L: EE 308",
+          "title": "F : CV",
           "type": "Lecture",
-          "teacher": "(Taklu)"
+          "teacher": ""
+        },
+        {
+          "title": "",
+          "type": "",
+          "teacher": ""
+        },
+        {
+          "title": "H : IoT",
+          "type": "Lecture",
+          "teacher": ""
         }
       ]
     },
@@ -104,37 +154,22 @@
       "day": "Friday",
       "ttList": [
         {
-          "title": "",
+          "title": "B",
           "type": "",
           "teacher": ""
         },
         {
-          "title": "T: EE 302",
-          "type": "Tutorial",
-          "teacher": "(Controls)"
+          "title": "B",
+          "type": "",
+          "teacher": ""
         },
         {
-          "title": "T: EE 308",
-          "type": "Tutorial",
-          "teacher": "(Taklu)"
-        },
-        {
-          "title": "T: EE 304",
-          "type": "Tutorial",
-          "teacher": "DSP(HOD)"
-        }
-      ]
-    },
-    {
-      "day": "Saturday",
-      "ttList": [
-        {
-          "title": "L: HS 302/ ES 302",
+          "title": "D : Photonics",
           "type": "Lecture",
           "teacher": ""
         },
         {
-          "title": "",
+          "title": "E",
           "type": "",
           "teacher": ""
         },
@@ -144,8 +179,8 @@
           "teacher": ""
         },
         {
-          "title": "",
-          "type": "",
+          "title": "H : IoT",
+          "type": "Lecture",
           "teacher": ""
         }
       ]

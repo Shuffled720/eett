@@ -40,6 +40,10 @@ export function FullWeekTT() {
             <TableHead>9:30-10:25</TableHead>
             <TableHead>10:30-11:25</TableHead>
             <TableHead>11:30-12:25</TableHead>
+            <TableHead>12:30-01:25</TableHead>
+            <TableHead>01:30-02:25</TableHead>
+            <TableHead>02:30-03:25</TableHead>
+            <TableHead>03:30-04:25</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -87,7 +91,6 @@ export function FullWeekTT() {
                 </>
               ) : (
                 <>
-                  {" "}
                   <TableRow key={day.day}>
                     <TableCell className="font-medium">{day.day}</TableCell>
                     {day.ttList.map((tt) => (
@@ -124,22 +127,12 @@ export function FullWeekTT() {
                         )}
                       </>
                     ))}
-                  </TableRow>{" "}
+                  </TableRow>
                 </>
               )}
             </>
           ))}
         </TableBody>
-        <TableFooter>
-          <TableRow>
-            <TableCell colSpan={2}>Tuesday:</TableCell>
-            <TableCell>P: EE 352 (E1)/P: EE 356 (E2)</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell colSpan={2}>Wednesday:</TableCell>
-            <TableCell>P: EE 352 (E2)/P: EE 356 (E1)</TableCell>
-          </TableRow>
-        </TableFooter>
       </Table>
     </div>
   )

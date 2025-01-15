@@ -128,10 +128,10 @@
           "room":"Gargi"
         },
         {
-          "title": "G : ML",
-          "type": "Lecture",
+          "title": "F",
+          "type": "",
           "teacher": "",
-          "room":"Gargi"
+          "room":""
         }
       ]
     },

@@ -10,7 +10,7 @@ const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <Link href="https://docs.google.com/spreadsheets/d/1E3ocQqnudZKi6ozj8d4fIpUWeCCveX5_iKzG2fDJafQ/edit?usp=sharing">
+      <Link href="https://docs.google.com/spreadsheets/d/1eghTPtX3DmHb0A-xETKaKEDnu51EqA9aA2finQNsjbQ/edit?usp=sharing">
         <motion.h1
           className="text-center text-4xl py-2 cursor-pointer hover:text-blue-500"
           whileHover={{ scale: 1.1 }}

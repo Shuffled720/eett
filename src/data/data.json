@@ -128,10 +128,10 @@
           "room":"Gargi"
         },
         {
-          "title": "F",
-          "type": "",
+          "title": "F : CV",
+          "type": "Lecture",
           "teacher": "",
-          "room":""
+          "room":"Sandipani"
         }
       ]
     },

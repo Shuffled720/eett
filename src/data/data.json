@@ -7,37 +7,37 @@
           "title": "A",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "C : SOPC",
           "type": "Lecture",
           "teacher": "",
-          "room":"L-31"
+          "room": "L-31"
         },
         {
           "title": "D : Photonics",
           "type": "Lecture",
           "teacher": "",
-          "room":"C21"
+          "room": "C21"
         },
         {
           "title": "F : CV",
           "type": "Lecture",
           "teacher": "",
-          "room":"Sandipani"
+          "room": "Sandipani"
         },
         {
           "title": "",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "G : ML",
           "type": "Lecture",
           "teacher": "",
-          "room":"Gargi"
+          "room": "Gargi"
         }
       ]
     },
@@ -48,37 +48,37 @@
           "title": "A",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "A",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "B",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "C : SOPC",
           "type": "Lecture",
           "teacher": "",
-          "room":"L-31"
+          "room": "L-31"
         },
         {
           "title": "",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "G : ML",
           "type": "Lecture",
           "teacher": "",
-          "room":"Gargi"
+          "room": "Gargi"
         }
       ]
     },
@@ -89,49 +89,49 @@
           "title": "E",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "C : SOPC",
           "type": "Lecture",
           "teacher": "",
-          "room":"L-31"
+          "room": "L-31"
         },
         {
           "title": "A",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "B",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "H : IoT",
           "type": "Lecture",
           "teacher": "",
-          "room":"L-41"
+          "room": "L-41"
         },
         {
           "title": "G : ML",
           "type": "Lecture",
           "teacher": "",
-          "room":"Gargi"
+          "room": "Gargi"
         },
         {
           "title": "F : CV",
           "type": "Lecture",
           "teacher": "",
-          "room":"Sandipani"
+          "room": "Sandipani"
         }
       ]
     },
@@ -142,37 +142,37 @@
           "title": "C : SOPC",
           "type": "Lecture",
           "teacher": "",
-          "room":"L-31"
+          "room": "L-31"
         },
         {
           "title": "D : Photonics",
           "type": "Lecture",
           "teacher": "",
-          "room":"C21"
+          "room": "C21"
         },
         {
           "title": "E",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "F : CV",
           "type": "Lecture",
           "teacher": "",
-          "room":"Sandipani"
+          "room": "Sandipani"
         },
         {
           "title": "",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "H : IoT",
           "type": "Lecture",
           "teacher": "",
-          "room":"L-41"
+          "room": "L-41"
         }
       ]
     },
@@ -183,100 +183,100 @@
           "title": "B",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "B",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "D : Photonics",
           "type": "Lecture",
           "teacher": "",
-          "room":"C21"
+          "room": "C21"
         },
         {
           "title": "E",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "",
           "type": "",
           "teacher": "",
-          "room":""
+          "room": ""
         },
         {
           "title": "H : IoT",
           "type": "Lecture",
           "teacher": "",
-          "room":"L-41"
+          "room": "L-41"
         }
       ]
     }
   ],
   "midexamTT": [
     {
-      "date_day": "23/02/20124 (Friday)",
+      "date_day": "03/03/2025 (Monday)",
       "time": "10:00-12:00",
-      "code": "EE 306",
-      "name": "D COM"
+      "code": "EE 450/ EE 650",
+      "name": "IoT"
     },
     {
-      "date_day": "24/02/2024 (Saturday)",
+      "date_day": "05/03/2025 (Wednesday)",
       "time": "10:00-12:00",
-      "code": "EE 302",
-      "name": "Controls"
+      "code": "EE 438/ EE 638",
+      "name": "SOPC"
     },
     {
-      "date_day": "27/02/2024 (Tuesday)",
+      "date_day": "06/03/2025 (Thrusday)",
       "time": "10:00-12:00",
-      "code": "EE 304",
-      "name": "DSP"
+      "code": "EE 447/ 647",
+      "name": "Photonics"
     },
     {
-      "date_day": "29/02/2024 (Thrusday)",
+      "date_day": "08/03/2025 (Saturday)",
       "time": "10:00-12:00",
-      "code": "ES 302",
-      "name": "ES/HS"
+      "code": "CS 419/619",
+      "name": "Computer Vision"
     },
     {
-      "date_day": "01/03/2024 (Friday)",
+      "date_day": "10/03/2025 (Monday)",
       "time": "10:00-12:00",
-      "code": "EE 308",
-      "name": "Power "
+      "code": "CS 403/ CS 603",
+      "name": "ML:"
     }
   ],
   "endExamTT": [
     {
-      "date_day": "26-04-2024 (Friday)",
+      "date_day": "26-04-2025 (Friday)",
       "time": "10:00-13:00",
       "code": "EE 306",
       "name": "D COM"
     },
     {
-      "date_day": "27-04-2024 (Saturday)",
+      "date_day": "27-04-2025 (Saturday)",
       "time": "10:00-13:00",
       "code": "EE 302",
       "name": "Controls"
     },
     {
-      "date_day": "30-04-2024 (Tuesday)",
+      "date_day": "30-04-2025 (Tuesday)",
       "time": "10:00-13:00",
       "code": "EE 304",
       "name": "DSP"
     },
     {
-      "date_day": "02-05-2024 (Thrusday)",
+      "date_day": "02-05-2025 (Thrusday)",
       "time": "10:00-13:00",
       "code": "ES 302",
       "name": "ES/HS"
     },
     {
-      "date_day": "03-05-2024 (Friday)",
+      "date_day": "03-05-2025 (Friday)",
       "time": "10:00-13:00",
       "code": "EE 308",
       "name": "Power "

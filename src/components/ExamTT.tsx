@@ -7,8 +7,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
-import data from "@/data/data.json"
+} from "@/components/ui/table";
+import data from "@/data/data.json";
 
 export function ExamTT() {
   return (
@@ -23,7 +23,7 @@ export function ExamTT() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data.endExamTT.map((exam, index) => (
+          {data.midexamTT.map((exam, index) => (
             <TableRow key={index}>
               <TableCell>{exam.date_day}</TableCell>
               <TableCell>{exam.code}</TableCell>
@@ -34,5 +34,5 @@ export function ExamTT() {
         {/* <TableFooter></TableFooter> */}
       </Table>
     </div>
-  )
+  );
 }

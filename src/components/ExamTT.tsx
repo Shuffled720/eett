@@ -14,7 +14,7 @@ export function ExamTT() {
   return (
     <div className="container bg-popover border-2 my-5 ">
       <Table className="text-xs antialiased ">
-        <TableCaption>ESE Time Table</TableCaption>
+        <TableCaption>MSE Time Table</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="">Day & Date</TableHead>

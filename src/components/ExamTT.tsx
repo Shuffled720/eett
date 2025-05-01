@@ -14,7 +14,7 @@ export function ExamTT() {
   return (
     <div className="container bg-popover border-2 my-5 ">
       <Table className="text-xs antialiased ">
-        <TableCaption>MSE Time Table</TableCaption>
+        <TableCaption>ESE Time Table</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="">Day & Date</TableHead>
@@ -23,7 +23,7 @@ export function ExamTT() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data.midexamTT.map((exam, index) => (
+          {data.endExamTT.map((exam, index) => (
             <TableRow key={index}>
               <TableCell>{exam.date_day}</TableCell>
               <TableCell>{exam.code}</TableCell>

@@ -252,34 +252,34 @@
   ],
   "endExamTT": [
     {
-      "date_day": "26-04-2025 (Friday)",
-      "time": "10:00-13:00",
-      "code": "EE 306",
-      "name": "D COM"
+      "date_day": "02/03/2025 (Friday)",
+      "time": "10:00-12:00",
+      "code": "EE 450/ EE 650",
+      "name": "IoT"
     },
     {
-      "date_day": "27-04-2025 (Saturday)",
-      "time": "10:00-13:00",
-      "code": "EE 302",
-      "name": "Controls"
+      "date_day": "06/03/2025 (Tuesday)",
+      "time": "10:00-12:00",
+      "code": "EE 438/ EE 638",
+      "name": "SOPC"
     },
     {
-      "date_day": "30-04-2025 (Tuesday)",
-      "time": "10:00-13:00",
-      "code": "EE 304",
-      "name": "DSP"
+      "date_day": "07/03/2025 (Wednessday)",
+      "time": "10:00-12:00",
+      "code": "EE 447/ 647",
+      "name": "Photonics"
     },
     {
-      "date_day": "02-05-2025 (Thrusday)",
-      "time": "10:00-13:00",
-      "code": "ES 302",
-      "name": "ES/HS"
+      "date_day": "09/03/2025 (Friday)",
+      "time": "10:00-12:00",
+      "code": "CS 419/619",
+      "name": "Computer Vision"
     },
     {
-      "date_day": "03-05-2025 (Friday)",
-      "time": "10:00-13:00",
-      "code": "EE 308",
-      "name": "Power "
+      "date_day": "10/03/2025 (Saturday)",
+      "time": "10:00-12:00",
+      "code": "CS 403/ CS 603",
+      "name": "ML:"
     }
   ]
 }

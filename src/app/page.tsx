@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <ExamTT /> */}
-      <FullWeekTT />
+      <ExamTT />
+      {/* <FullWeekTT /> */}
       {/* <Material /> */}
-      <Menu />
+      {/* <Menu /> */}
     </>
   );
 }

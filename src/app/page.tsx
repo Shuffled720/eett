@@ -10,7 +10,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <ExamTT />
+      sab khatam ho gaya
+      {/* <ExamTT /> */}
       {/* <FullWeekTT /> */}
       {/* <Material /> */}
       {/* <Menu /> */}
